@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .hflex {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(33, 110, 255);
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .hflex p {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hflex a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .dt {
+            justify-content: space-between;
+        }
+
+        .par,
+        .a {
+            justify-content: space-between;
+        }
+
+        .a1 {
+            margin: 10px;
+        }
+        .a1:hover{
+            color: darkblue;
+            text-decoration: underline darkblue;
+        }
+        .a2:hover{
+            color: darkblue;
+            text-decoration: underline darkblue;
+        }
+
+        .mainflex {
+            width: 100%;
+            height: 450px;
+            
+            display: flex;
+        }
+
+        .b1 {
+            background-color: skyblue;
+            width: 1365px;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        .dropdown {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: rgb(85, 85, 255);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 60px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover {
+            color: blue;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+
+            border-radius: 200px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .h1 {
+            color: gray;
+        }
+
+        .b2 {
+            height: 299px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .b12a {
+            display: flex;
+            height: 50%;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: nowrap;
+            /* margin: 0; */
+            text-align: center;
+
+
+        }
+
+        .b121 {
+            height: 100%;
+            width: 150px;
+            margin-left: 457px;
+            padding-top: 60px;
+            background-color: rgb(120, 91, 189);
+            color: rgb(83, 83, 83);
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .b122 {
+            height: 100%;
+            width: 150px;
+            padding-top: 60px;
+            background-color: rgb(255, 119, 142);
+            color: rgb(83, 83, 83);
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .b123 {
+            height: 100%;
+            width: 150px;
+            margin-right: 458px;
+            padding-top: 60px;
+            background-color: skyblue;
+            color: rgb(83, 83, 83);
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .b12b {
+            display: flex;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            /* margin: 0; */
+            text-align: center;
+        }
+
+        .b124 {
+            height: 100%;
+            width: 150px;
+            padding-top: 60px;
+            background-color: lightblue;
+            color: rgb(83, 83, 83);
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .b125 {
+            height: 100%;
+            width: 150px;
+            padding-top: 60px;
+            background-color: rgb(253, 188, 67);
+            color: rgb(83, 83, 83);
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .foot{
+            width: 100%;
+            height: 169px;
+            display: flex;
+        }
+        .f1{
+            height: 100%;
+            align-self: flex-start;
+            width: 217px;
+            background-color: rgb(33, 110, 255);
+        }
+        .f2{
+            height: 100%;
+            flex-grow: 5;
+            background-color: skyblue;
+        }
+        .f3{
+            height: 100%;
+            align-self: flex-end;
+            width: 217px;
+            background-color: rgb(33, 110, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="headflex">
+            <header class="hflex">
+                <div class="par">
+                    <p>Jan 20, 2024</p>
+                </div>
+                <div class="a">
+                    <a href="#" class="fl a1">Sign Up</a>
+                    <a href="#" class="fl a2">Login</a>
+                </div>
+            </header>
+        </div>
+        <div class="mainflex">
+            <main>
+                <div class="b1">
+                    <button class="dropdown">Subscribe <span class="ar">&#9662;</span></button>
+                    <div>
+                        <h1 class="h1">AWESOME LOGO</h1>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+
+                </div>
+                <div class="b2">
+                    <div class="b12a">
+                        <div class="b121">5</div>
+                        <div class="b122">2</div>
+                        <div class="b123">3</div>
+                    </div>
+                    <div class="b12b">
+                        <div class="b124">4</div>
+                        <div class="b125">1</div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <div class="footflex">
+            <footer>
+                <div class="foot">
+                    <div class="f1"></div>
+                    <div class="f2"></div>
+                    <div class="f3"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
